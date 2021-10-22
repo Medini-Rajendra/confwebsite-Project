@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TryBootstrap</title>
+</head>
+<body>
+  <div class="bg-image" id="startimgdiv">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light bg-image">
+          <div class="container-fluid" id="idnavbar">
+            <a class="navbar-brand" id="remove_navbar" href="index.html"><img src='./images/hotchkiss_desk_download.jpg' width="200" height="50" alt="logo"></a>
+            <button class="navbar-toggler" id="togglenavba" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" onclick="MobileMenu()"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="me-5 nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="me-5 nav-item">
+                  <a class="nav-link" href="#">Program</a>
+                </li>
+                <li class="me-5 nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Join</a>
+                </li>
+                <li class="me-5 nav-item">
+                  <a class="nav-link" href="#">Sponsor</a>
+                </li>
+                <li class="me-5 nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-danger nav-link fw-bold border border-danger" href="#">Campaign</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+       </nav>
+    </header>
+    <section class="container-fluid" id="Home">
+      <h4 class="text-danger pt-5">"Hello! Welcome Researchers"</h4>
+      <h1 class="text-danger mx-2 fw-bold" id="main_heading">HARVARD BRAIN INITIATIVE SUMMIT 2020</h1>
+      <p class="m-1 border border-white p-3 text-justify" id="main_para">The 2020 Harvard Brain Initiative Investigators Meeting will virtually convene BRAIN Initiative awardees, staff, and leadership from the contributing federal agencies, plus representatives and investigators from participating non-federal organizations, and members of the media, public, and Congress.</p>
+      <h2 class="pt-2 mb-0"><strong>2020.10.15(THU) ~ 16(FRI)</strong></h2>
+      <p class="pb-5 mb-0">@ San Diego Conference Hall, Seminar Hall and more</p>
+    </section>
+  </div>
+    <section class="secondarysection container-fluid">
+      <h5 class="pt-5 text-white text-center" id="mainprogtitl">Main Program</h5>
+      <hr class="border border-danger">
+      <div class="container">
+        <div class="mt-2 row" id="cont_row">
+          <div class="p-3 col text-white border" id="cont_col">
+            <div class="cont_elements">
+              <img src="./images/seminar_icon.jpg" alt="seminar icon" width="100" height="100">
+              <h6 class="text-danger"><strong>Seminar</strong></h6>
+              <p>The meeting will showcase cutting-edge research from hundreds of BRAIN Initiative researchers covering the spectrum of neuroscience!</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 row" id="cont_row1">
+          <div class="p-3 col text-white border" id="cont_col1">
+            <div class="cont_elements">
+              <img src="./images/symp_img1.jpg" alt="symposia icon" width="100" height="100">
+              <h6 class="text-danger"><strong>Symposia</strong></h6>
+              <p>HBI organizes periodic symposia on basic neuroscience and brain disorder research</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 row" id="cont_row11">
+          <div class="p-4 col text-white border" id="cont_col3">
+            <div class="cont_elements">
+              <img src="./images/Affinity-Group-Image-1.jpg" alt="image" width="100" height="100">
+              <h6 class="text-danger"><strong>Affinity Groups</strong></h6>
+              <p>HBI Affinity Groups gather researchers from all corners of the university to engage in ongoing scientific conversations</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 row" id="cont_row12">
+          <div class="p-4 col text-white border" id="cont_col33">
+            <div class="cont_elements">
+              <img src="./images/Socials-Image.jpg" alt="image" width="100" height="100">
+              <h6 class="text-danger"><strong>Neuro Socials</strong></h6>
+              <p>Opportunities for students, fellows and faculty to mingle and exchange ideas outside of formal scientific events</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 row" id="cont_row13">
+          <div class="p-4 col text-white border" id="cont_col43">
+            <div class="cont_elements">
+              <img src="./images/tech_workshop.jpg" alt="image" width="100" height="100">
+              <h6 class="text-danger"><strong>Tech Workshops</strong></h6>
+              <p>Technical workshops conducted by facults and senior researchers to help students</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="button" id="see_program_button" class="bg-danger p-3 mt-5 mb-5 text-white">Join HBI Neuroscience Event 2021</button>
+      </div>
+    </section>
+    <!--section class="speakers_contain container-fluid" id="speakers_contain">
+      <h3 class="mt-4 mb-4 fw-bold text-secondary text-center" id="feat_speakers">Featured Speakers</h3>
+      <div class="div_speakers_align" id="div_speakers_align">
+        <div id="firstset_speakiden">
+          <div class="pt-5 speaker_flex">
+            <div class="feat_speakers">
+              <img class="mx-3 mt-3" id="speakers_images" src="./images/Albers_Mark.jpg" alt="scientist image">
+            </div>
+            <div class="mx-5 titles_flex me-0">
+              <h2 class="mb-1 mx-5 me-0">Mark Albers</h2>
+              <h6 class="mb-1 mx-5 me-0">Assistant Professor of Neurology</h6>
+              <p class="w-auto mx-5 me-0">We investigate the olfactory system of mice and humans since it is vulnerable early pathologic events of neurodegeneration.</p>
+            </div>
+          </div>
+          <div class="mt-5 speaker_flex">
+            <div class="feat_speakers">
+              <img class="mx-3 mt-3" id="speakers_images" src="./images/scientist2.jpg" alt="scientist image">
+            </div>
+            <div class="mx-5 titles_flex me-0">
+              <h2 class="mb-1 mx-5 me-0">Frederick Alt</h2>
+              <h6 class="mb-1 mx-5 me-0">Professor of Genetics</h6>
+              <p class="w-auto text-justify mx-5 me-0">Dr. Alt’s lab is interested in understanding the interplay between these phenomena—in understanding both how healthy genomic rearrangements occur.</p>
+            </div>
+          </div>
+          <div class="mt-5 speaker_flex" id="thirdspeak_remove">
+            <div class="feat_speakers">
+              <img class="mx-3 mt-3" id="speakers_images" src="./images/scientist2.jpg" alt="scientist image">
+            </div>
+            <div class="mx-5 titles_flex me-0">
+              <h2 class="mb-1 mx-5 me-0 m">Frederick Alt</h2>
+              <h6 class="mb-1 mx-5 me-0">Professor of Genetics</h6>
+              <p class="w-auto text-justify mx-5 me-0">Dr. Alt’s lab is interested in understanding the interplay between these phenomena—in understanding both how healthy genomic rearrangements occur.</p>
+            </div>
+          </div>
+        </div>
+        <div id="secondset_speakiden">
+          <div class="pt-5 speaker_flex">
+            <div class="feat_speakers1">
+              <img class="mx-3 mt-3" id="speakers_images1" src="./images/Albers_Mark.jpg" alt="scientist image">
+            </div>
+            <div class="mx-5 titles_flex me-0">
+              <h2 class="mb-1 mx-5 me-0">Mark Albers</h2>
+              <h6 class="mb-1 mx-5 me-0">Assistant Professor of Neurology</h6>
+              <p class="w-auto mx-5 me-0" id="speakers_content">We investigate the olfactory system of mice and humans since it is vulnerable early pathologic events of neurodegeneration.</p>
+            </div>
+          </div>
+          <div class="mt-5 speaker_flex">
+            <div class="feat_speakers1">
+              <img class="mx-3 mt-3" id="speakers_images1" src="./images/scientist2.jpg" alt="scientist image">
+            </div>
+            <div class="mx-5 titles_flex me-0">
+              <h2 class="mb-1 mx-5 me-0">Frederick Alt</h2>
+              <h6 class="mb-1 mx-5 me-0">Professor of Genetics</h6>
+              <p class="w-auto text-justify mx-5 me-0" id="speakers_content">Dr. Alt’s lab is interested in understanding the interplay between these phenomena—in understanding both how healthy genomic rearrangements occur.</p>
+            </div>
+          </div>
+          <div class="mt-5 speaker_flex">
+            <div class="feat_speakers1">
+              <img class="mx-3 mt-3" id="speakers_images1" src="./images/scientist2.jpg" alt="scientist image">
+            </div>
+            <div class="mx-5 titles_flex me-0">
+              <h2 class="mb-1 mx-5 me-0 m">Frederick Alt</h2>
+              <h6 class="mb-1 mx-5 me-0">Professor of Genetics</h6>
+              <p class="w-auto text-justify mx-5 me-0" id="speakers_content">Dr. Alt’s lab is interested in understanding the interplay between these phenomena—in understanding both how healthy genomic rearrangements occur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="more_button" class="bg-white p-3 mt-5 mb-5 fw-bold">
+        MORE<i class="icon-large fa fa-angle-down"></i>
+      </button>
+      
+    </section!-->
+    <script src="add_menufunc.js"></script>
+</body>
+</html>
