@@ -154,7 +154,6 @@ i {
   background-color: #6070ff;
 
   /* mix-blend-mode: multiply; */
-  filter: blur(8px);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
