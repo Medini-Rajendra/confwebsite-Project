@@ -35,3 +35,7 @@ https://www.loom.com/share/891b596532cd449ba86c018d06f6772c
 ## License
 
 This project is [MIT](./MIT.md) licensed.
+
+##Acknowledgments
+
+Cindy Shin, the author of the original design, as required by the Creative Commons License. 

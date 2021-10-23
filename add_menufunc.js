@@ -60,6 +60,7 @@ function createDivimage(text, text1, text2) {
   getsecimgclass1.setAttribute('class', text1);
   getsecimgclass1.setAttribute('src', text);
   getsecimgclass1.setAttribute('id', text2);
+  getsecimgclass1.setAttribute('width', '200');
   getsecimgclass1.setAttribute('alt', 'scientist image');
   return getsecimgclass1;
 }
@@ -87,6 +88,8 @@ function createDivheads2(text1, text2, text3) {
 }
 
 function maximizefunc() {
+  const mainprogget = document.getElementById('mainprogtitl');
+  mainprogget.classList.add('h2');
   const findthefirstspeak = document.getElementById('firstset_speakiden');
   if (findthefirstspeak.childNodes.length > 2) {
     findthefirstspeak.removeChild(findthefirstspeak.childNodes[3]);
@@ -128,7 +131,6 @@ function maximizefunc() {
     lisecondcreate.append(lisecondimage);
     ullistcreate.append(lifirstcreate, lisecondcreate, lithirdcreate, lifourthcreate, lififcreate);
     const { body } = document;
-    // body.append(uldivcreate)
     body.insertBefore(uldivcreate, body.firstChild);
   }
 
@@ -145,25 +147,20 @@ function maximizefunc() {
   const chkdiv42 = document.querySelector('#cont_row12');
   const chkdiv52 = document.querySelector('#cont_row13');
 
-  // for (let ij = 0; ij < chkdiv2.length; ij += 1) {
   chkdiv2.classList.remove('row');
   chkdiv22.classList.remove('row');
+  chkdiv22.classList.add('mx-2');
   chkdiv32.classList.remove('row');
   chkdiv42.classList.remove('row');
+  chkdiv42.classList.add('mx-2');
   chkdiv52.classList.remove('row');
-  // chkdiv2[ij].classList.add('col')
-  // }
   const chkdiv3 = document.querySelector('#cont_col');
   const chkdiv33 = document.querySelector('#cont_col1');
   const chkdiv4 = document.querySelector('#cont_col3');
   const chkdiv44 = document.querySelector('#cont_col33');
   const chkdiv444 = document.querySelector('#cont_col43');
-  // for (let kj = 0; kj < chkdiv3.length; kj += 1) {
   chkdiv3.classList.remove('col');
   chkdiv33.classList.remove('col');
-  // chkdiv3[kj].classList.add('row')
-  // }
-  // for (let jj = 0; jj < chkdiv4.length; jj += 1) {
   chkdiv4.classList.remove('col');
   chkdiv4.classList.remove('p-4');
   chkdiv4.classList.add('p-3');
@@ -177,6 +174,8 @@ function maximizefunc() {
 
   const chkdiv5 = document.querySelector('#see_program_button');
   chkdiv5.classList.remove('bg-danger');
+  chkdiv5.classList.remove('mb-5');
+  chkdiv5.classList.add('mb-3');
   chkdiv5.classList.add('bg-dark');
   chkdiv5.classList.add('border-0');
   chkdiv5.innerHTML = 'SEE THE WHOLE PROGRAM';
@@ -208,7 +207,7 @@ function maximizefunc() {
   newsection.setAttribute('class', 'bg-dark partner_section mt-5');
   newsection.setAttribute('id', 'newaddpartners');
   const h2section = document.createElement('h2');
-  h2section.setAttribute('class', 'pt-5 text-secondary text-center');
+  h2section.setAttribute('class', 'pt-5 text-secondary partneridentifi text-center');
   h2section.textContent = 'Partner';
   const divappenimg = document.createElement('div');
   divappenimg.setAttribute('class', 'text-center');
@@ -285,8 +284,9 @@ function maximizefunc() {
     identimage.setAttribute('id', 'speakers_images');
     identimage.setAttribute('src', './images/scientist2.jpg');
     identimage.setAttribute('alt', 'Scientist image');
+    identimage.setAttribute('width', '200');
     const identthird2 = document.createElement('div');
-    identthird2.setAttribute('class', 'mx-5 titles_flex me-0');
+    identthird2.setAttribute('class', 'mx-2 titles_flex me-0');
     const identheading2 = document.createElement('h2');
     identheading2.setAttribute('class', 'mb-1 mx-5 me-0');
     identheading2.textContent = 'Frederick Alt';
@@ -343,21 +343,21 @@ function maximizefunc() {
     ];
 
     const divheads = [
-      createDivheads('mb-1 mx-5 me-0', 'Todd Anthony, PhD'),
-      createDivheads('mb-1 mx-5 me-0', 'Susan L. Andersen, PhD'),
-      createDivheads('mb-1 mx-5 me-0', 'Mark Andermann, PhD'),
+      createDivheads('mb-1 mx-4 pt-3 me-0', 'Todd Anthony'),
+      createDivheads('mb-1 mx-4 pt-1 me-0', 'Susan L. Andersen'),
+      createDivheads('mb-1 mx-4 me-0', 'Mark Andermann'),
     ];
 
     const divheads1 = [
-      createDivheads1('mb-1 mx-5 me-0', 'Assistant Professor of Psychiatry and Neurology'),
-      createDivheads1('mb-1 mx-5 me-0', 'Associate Professor of Psychiatry'),
-      createDivheads1('mb-1 mx-5 me-0', 'Professor of Medicine'),
+      createDivheads1('mb-1 mx-4 pt-2 me-0', 'Assistant Professor of Psychiatry and Neurology'),
+      createDivheads1('mb-1 mx-4 pt-2 me-0', 'Associate Professor of Psychiatry'),
+      createDivheads1('mb-1 mx-4 pt-2 me-0', 'Professor of Medicine'),
     ];
 
     const divheads2 = [
-      createDivheads2('w-auto mx-5 me-0', 'speakers_content', 'Our goal is to define the neural circuits and genes that control reactions to stress, with a major interest in determining the mechanisms that dictate susceptibility.'),
-      createDivheads2('w-auto mx-5 me-0', 'speakers_content', 'Our goal is to determine the underlying mechanism(s) that are associated with disease progression across childhood, adolescence, and adulthood in rodent models that can be used to redirect an abnormal trajectory via novel preventative interventions.'),
-      createDivheads2('w-auto mx-5 me-0', 'speakers_content', 'The Anderman lab studies how the needs of the body determine which sensory cues are attended to, learned, and remembered.'),
+      createDivheads2('w-50 mx-4 pt-1 me-0', 'speakers_content', 'Our goal is to define the neural circuits and genes that control reactions to stress, with a major interest in determining the mechanisms that dictate susceptibility.'),
+      createDivheads2('w-50 mx-4 pt-1 me-0', 'speakers_content', 'Our goal is to determine the underlying mechanism(s) that are associated with disease progression across childhood, adolescence, and adulthood in rodent models that can be used to redirect an abnormal trajectory.'),
+      createDivheads2('w-50 mx-4 pt-1 me-0', 'speakers_content', 'The Anderman lab studies how the needs of the body determine which sensory cues are attended to, learned, and remembered.'),
     ];
 
     const findelems = document.getElementsByClassName('feat_speakers1');
@@ -384,9 +384,77 @@ function maximizefunc() {
     const gettogglenav = document.getElementById('togglenavba');
     gettogglenav.parentNode.insertBefore(addaid, gettogglenav);
   }
+
+  const getcssclasssect = document.querySelectorAll('.feat_speakers');
+  const getcssclasssect1 = document.querySelectorAll('#secondset_speakide');
+  const getcssclasssect2 = document.querySelectorAll('#speakers_content');
+  for (let kn = 0; kn < getcssclasssect2.length; kn += 1) {
+    getcssclasssect2[kn].style.fontSize = '18px';
+  }
+
+  for (let kk = 0; kk < getcssclasssect1[0].childNodes.length; kk += 1) {
+    getcssclasssect1[0].childNodes[kk].style.paddingLeft = 'unset';
+  }
+  getcssclasssect1[0].childNodes[1].style.paddingTop = '3%';
+  getcssclasssect1[0].childNodes[2].style.paddingTop = '2%';
+
+  for (let ik = 0; ik < getcssclasssect.length; ik += 1) {
+    getcssclasssect[ik].style.marginLeft = '5%';
+  }
+  for (let ik = 1; ik < getcssclasssect.length; ik += 1) {
+    getcssclasssect[ik].style.marginTop = '2%';
+  }
+  getcssclasssect[1].style.marginTop = '3%';
+  getcssclasssect[2].style.marginTop = '3%';
+  const getcssclassheading = document.querySelectorAll('.titles_flex');
+  const getcssclassheading1 = document.querySelectorAll('.titles_flex1');
+
+  for (let jk = 0; jk < getcssclassheading.length; jk += 1) {
+    getcssclassheading[jk].childNodes[0].style.fontSize = '38px';
+    getcssclassheading[jk].childNodes[2].style.fontSize = '18px';
+    getcssclassheading[jk].childNodes[1].style.fontSize = '`20px';
+    getcssclassheading1[jk].childNodes[1].style.fontStyle = 'italic';
+    getcssclassheading1[jk].childNodes[1].style.color = 'red';
+    getcssclassheading1[jk].childNodes[0].style.fontSize = '38px';
+    getcssclassheading[jk].childNodes[1].style.fontStyle = 'italic';
+    getcssclassheading[jk].childNodes[1].style.color = 'red';
+    getcssclassheading[jk].style.marginTop = '2%';
+    getcssclassheading[jk].style.paddingLeft = '13%';
+    getcssclassheading1[jk].style.paddingLeft = '5%';
+    getcssclassheading[jk].style.width = '400px';
+    getcssclassheading1[jk].style.width = '800px';
+    getcssclassheading1[jk].style.paddingLeft = 'unset';
+  }
+  for (let jk = 1; jk < getcssclassheading.length; jk += 1) {
+    getcssclassheading[jk].style.marginTop = '4%';
+  }
 }
 
 function minimizefunc() {
+  const speakimgscrt = document.querySelectorAll('#speakers_images');
+  const speaktitscrt = document.querySelectorAll('.titles_flex');
+  const speakfeatscrt = document.querySelectorAll('.feat_speakers');
+  const fixrowelem = document.querySelector('#cont_row');
+  fixrowelem.classList.add('row');
+  const fixrowelem1 = document.querySelector('#cont_row1');
+  fixrowelem1.classList.remove('mx-2');
+  fixrowelem1.classList.add('row');
+  const fixrowelem2 = document.querySelector('#cont_row11');
+  fixrowelem2.classList.add('row');
+  const fixrowelem3 = document.querySelector('#cont_row12');
+  fixrowelem3.classList.add('row');
+  fixrowelem3.classList.remove('mx-2');
+  const fixrowelem4 = document.querySelector('#cont_row13');
+  fixrowelem4.classList.add('row');
+  for (let ii = 0; ii < speakimgscrt.length; ii += 1) {
+    speakimgscrt[ii].removeAttribute('width');
+    speakimgscrt[ii].removeAttribute('style');
+    speaktitscrt[ii].removeAttribute('style');
+    speakfeatscrt[ii].removeAttribute('style');
+    for (let ji = 0; ji < speaktitscrt[ii].childNodes.length; ji += 1) {
+      speaktitscrt[ii].childNodes[ji].removeAttribute('style');
+    }
+  }
   const ullistident = document.querySelector('#addullisttop');
   if (ullistident !== null) {
     ullistident.remove();
@@ -454,6 +522,7 @@ function appendspeakers(tt, sut, sp, sid, ss, sa, t1, h2t, h2c, h6t, h6c, prt, p
   newimgcreate.setAttribute('id', sid);
   newimgcreate.setAttribute('src', ss);
   newimgcreate.setAttribute('alt', sa);
+  newimgcreate.setAttribute('width', '200');
   const newdiv2create = document.createElement('div');
   newdiv2create.setAttribute('class', t1);
   const newh2create = document.createElement('h2');
@@ -565,6 +634,10 @@ function addmorespeakers() {
   ];
   const getsub1classsect = document.getElementById('firstset_speakiden');
   addspeakers(speakers, getsub1classsect);
+  const remwidthaddspeak = document.querySelectorAll('#speakers_images');
+  for (let ki = 0; ki < remwidthaddspeak.length; ki += 1) {
+    remwidthaddspeak[ki].removeAttribute('width');
+  }
 }
 
 function loadspeakers() {
@@ -589,7 +662,7 @@ function loadspeakers() {
     {
       divmainclass: 'mt-4 pt-4 speaker_flex',
       divsubclass: 'feat_speakers',
-      speakerimageclass: 'mx-3 mt-3',
+      speakerimageclass: 'mx-3 mt-4',
       speakerimageid: 'speakers_images',
       speakerimgsrc1: './images/AndersenSue_150.jpg',
       speakerimagesrc: './images/Anderson_Matthew-150x150.jpg',
@@ -658,12 +731,12 @@ function loadspeakers1() {
     {
       divmainclass: 'pt-5 speaker_flex',
       divsubclass: 'feat_speakers',
-      speakerimageclass: 'mx-3 mt-3',
+      speakerimageclass: 'mt-3',
       speakerimageid: 'speakers_images',
       speakerimgsrc1: './images/Anthony_Todd-150x150.jpg',
       speakerimagesrc: './images/Albers_Mark.jpg',
       speakerimagealt: 'scientist image',
-      divmain2class: 'mx-5 titles_flex me-0',
+      divmain2class: 'mx-2 titles_flex me-0',
       divh2class: 'mb-1 mx-5 me-0',
       divh2content: 'Mark Albers',
       divh6class: 'mb-1 mx-5 me-0',
@@ -680,9 +753,9 @@ function loadspeakers1() {
       speakerimgsrc1: './images/AndersenSue_150.jpg',
       speakerimagesrc: './images/Anderson_Matthew-150x150.jpg',
       speakerimagealt: 'scientist image',
-      divmain2class: 'mx-5 titles_flex me-0',
+      divmain2class: 'mx-2 titles_flex me-0',
       divh2class: 'mb-1 mx-5 me-0',
-      divh2content: 'Frederick Alt',
+      divh2content: 'Mark Walter',
       divh6class: 'mb-1 mx-5 me-0',
       divh6content: 'Professor of Genetics',
       divmainparaclass: 'w-auto text-justify mx-5 me-0',
@@ -703,7 +776,6 @@ function loadspeakers1() {
   const getsub1classsect = document.createElement('div');
   getsub1classsect.setAttribute('id', 'firstset_speakiden');
   const sub2chk = document.createElement('div');
-  // sub2chk.setAttribute('id','secondset_speakide')
   getmainclasssect.append(geth3classsect, getsubclasssect);
   getsubclasssect.append(getsub1classsect, sub2chk);
   const createbuttonsect = document.createElement('button');
@@ -726,7 +798,6 @@ function mychkfuncti() {
     loadspeakers1();
     maximizefunc();
   } else {
-    // preloadevents()
     loadspeakers();
     minimizefunc();
   }
@@ -736,6 +807,10 @@ window.onload = mychkfuncti();
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 700) {
+    const getimagewidth = document.querySelectorAll('#speakers_images');
+    for (let jk = 0; jk < getimagewidth.length; jk += 1) {
+      getimagewidth[jk].setAttribute('width', '200');
+    }
     maximizefunc();
   } else {
     minimizefunc();
