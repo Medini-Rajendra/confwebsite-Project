@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TryBootstrap</title>
+</head>
+<body>
+  <div class="bg-image" id="startimgdiv">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light bg-image">
+          <div class="container-fluid" id="idnavbar">
+            <a class="navbar-brand" id="remove_navbar" href="index.html"><img src='./images/hotchkiss_desk_download.jpg' width="200" height="50" alt="logo"></a>
+            <button class="navbar-toggler" id="togglenavba" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" onclick="MobileMenu()"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="me-5 nav-item">
+                  <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="me-5 nav-item">
+                  <a class="nav-link" href="#">Program</a>
+                </li>
+                <li class="me-5 nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Join</a>
+                </li>
+                <li class="me-5 nav-item">
+                  <a class="nav-link" href="#">Sponsor</a>
+                </li>
+                <li class="me-5 nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-danger nav-link fw-bold border border-danger" href="#">Campaign</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+       </nav>
+    </header>
+    <section class="container-fluid" id="Home">
+      <h4 class="text-danger pt-5">"Hello! Welcome Researchers"</h4>
+      <h1 class="text-danger mx-2 fw-bold" id="main_heading">HARVARD BRAIN INITIATIVE SUMMIT 2020</h1>
+      <p class="m-1 border border-white p-3 text-justify" id="main_para">The 2020 Harvard Brain Initiative Investigators Meeting will virtually convene BRAIN Initiative awardees, staff, and leadership from the contributing federal agencies, plus representatives and investigators from participating non-federal organizations, and members of the media, public, and Congress.</p>
+      <h2 class="pt-2 mb-0"><strong>2020.10.15(THU) ~ 16(FRI)</strong></h2>
+      <p class="pb-5 mb-0">@ San Diego Conference Hall, Seminar Hall and more</p>
+    </section>
+  </div>
+    <section class="secondarysection container-fluid">
+      <h2 class="pt-5 text-white text-center" id="mainprogtitl">Main Program</h2>
+      <hr class="border border-danger">
+      <div class="container">
+        <div class="mt-2 row" id="cont_row">
+          <div class="p-3 col text-white border" id="cont_col">
+            <div class="cont_elements">
+              <img src="./images/seminar_icon.jpg" alt="seminar icon" width="100" height="100">
+              <h6 class="text-danger" id="gridtextadj"><strong>Seminar</strong></h6>
+              <p id="gridtextadj1">The meeting will showcase cutting-edge research from hundreds of BRAIN Initiative researchers covering the spectrum of neuroscience!</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 row" id="cont_row1">
+          <div class="p-3 col text-white border" id="cont_col1">
+            <div class="cont_elements">
+              <img src="./images/symp_img1.jpg" alt="symposia icon" width="100" height="100">
+              <h6 class="text-danger" id="gridtextadjext1"><strong>Symposia</strong></h6>
+              <p id="gridtextadj1ext1">HBI organizes periodic symposia on basic neuroscience and brain disorder research--seeking to grow the research communities</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 row" id="cont_row11">
+          <div class="p-4 col text-white border" id="cont_col3">
+            <div class="cont_elements">
+              <img src="./images/Affinity-Group-Image-1.jpg" alt="image" width="100" height="100">
+              <h6 class="text-danger" id="gridtextadjext2"><strong>Affinity Groups</strong></h6>
+              <p id="gridtextadj1ext2">HBI Affinity Groups gather researchers from all corners of the university to engage in scientific conversations of common interest</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 row" id="cont_row12">
+          <div class="p-4 col text-white border" id="cont_col33">
+            <div class="cont_elements">
+              <img src="./images/Socials-Image.jpg" alt="image" width="100" height="100">
+              <h6 class="text-danger" id="gridtextadjext3"><strong>Neuro Socials</strong></h6>
+              <p id="gridtextadj1ext3">Opportunities for students, fellows and faculty to mingle and exchange ideas outside of formal scientific events like seminars and symposia</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-2 row" id="cont_row13">
+          <div class="p-4 col text-white border" id="cont_col43">
+            <div class="cont_elements">
+              <img src="./images/tech_workshop.jpg" alt="image" width="100" height="100">
+              <h6 class="text-danger" id="gridtextadjext4"><strong>Tech Workshops</strong></h6>
+              <p id="gridtextadj1ext4">Technical workshops conducted by facults and senior researchers to help students understand the brain dynamics in a competitive way</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="button" id="see_program_button" class="bg-danger p-3 mt-5 mb-5 text-white">Join HBI Neuroscience Event 2021</button>
+      </div>
+    </section>
+    <script src="add_menufunc.js"></script>
+</body>
+</html>

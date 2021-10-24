@@ -1,8 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Final Capstone Project
 
-# Project Name
-
-> One paragraph statement about the project.
+> The goal of this project is to design the given website design using all the tools learnt during the first four weeks. Javascript DOM manipulation is implemented and both home and about pages are implemented.
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,67 +8,34 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, CSS, Javascript
+- Visual Studio
+- HTML, CSS, Bootstrap
+
+## Video Link for the Project
+https://www.loom.com/share/891b596532cd449ba86c018d06f6772c
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://medini-rajendra.github.io/CapstoneProject/)
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+#### Setup 
+- git clone https://github.com/Medini-Rajendra/CapstoneProject.git
+- cd into the folder
+- git checkout work_branch
+- open `index.html` with live server
 
 ## Authors
 
-👤 **Author1**
+**Rajendra Medini**
+- GitHub: [@Medini-Rajendra](https://github.com/Medini-Rajendra)
+- Twitter: [@invenire512](https://twitter.com/invenire512)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/medinichaitanya/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
+## License
 
 This project is [MIT](./MIT.md) licensed.
+
+##Acknowledgments
+
+Cindy Shin, the author of the original design, as required by the Creative Commons License. 
